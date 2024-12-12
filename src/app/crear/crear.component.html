@@ -1,0 +1,26 @@
+<section>
+  <div class="form">
+    <div class="title">Crear tarea</div>
+    
+    <div class="input-container ic1">
+      <input id="Nombre" class="input" type="text" placeholder=" " [(ngModel)]="newTarea.nombre" name="nombre" />
+      <div class="cut"></div>
+      <label for="Nombre" class="placeholder">Nombre</label>
+    </div>
+    
+    <div class="input-container ic2">
+      <input id="Descripción" class="input" type="text" placeholder=" " [(ngModel)]="newTarea.descripcion" name="descripcion" />
+      <div class="cut"></div>
+      <label for="Descripción" class="placeholder">Descripción</label>
+    </div>
+    
+    <div class="input-container ic2">
+      <input id="Fecha" class="input" type="date" placeholder=" " [(ngModel)]="newTarea.fecha" name="fecha" />
+      <div class="cut cut-short"></div>
+      <label for="Fecha" class="placeholder">Fecha</label>
+    </div>
+
+    <button class="back" routerLink="/tareas" routerLinkActive="active" aria-current="page">Regresar</button>
+    <button type="button" class="submit" (click)="addTarea()">Crear Tarea</button>
+  </div>
+</section>

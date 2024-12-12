@@ -1,0 +1,36 @@
+<section>
+    <h1>Tareas</h1>
+    <div class="button-container">
+      <button routerLink="/crear" routerLinkActive="active" aria-current="page">Crear Tarea</button>
+    </div>
+  </section>
+  
+  <div class="table-wrapper">
+    <table class="fl-table">
+      <thead>
+        <tr>
+          <th>N</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Fecha</th>
+          <th>Estado</th>
+          <th>Completado?</th>
+          <th>Editar</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tarea of Tareas">
+          <td>{{ tarea.id }}</td>
+          <td>{{ tarea.nombre }}</td>
+          <td>{{ tarea.descripcion }}</td>
+          <td>{{ tarea.fecha }}</td>
+          <td>{{tarea.estado}}</td>
+          <td><button>Completado</button></td>
+          <td><button click="(editarTarea)">Editar</button></td>
+          <button (click)="eliminarTarea(tarea.id)">Eliminar</button>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
