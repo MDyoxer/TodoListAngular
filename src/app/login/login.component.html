@@ -1,0 +1,23 @@
+<div class="background">
+
+    <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
+                <h1 class="opacity">LOGIN</h1>
+                <form>
+                    <input type="text" [(ngModel)]="user" name="user" placeholder="USERNAME" />
+                    <input [(ngModel)]="contra" name="contra"   type="password" placeholder="PASSWORD" />
+                    <button class="opacity" (click)="login()">SUBMIT</button>
+                </form>
+                <div class="register-forget opacity">
+                    <a routerLink="/registrate" routerLinkActive="active" aria-current="page" >REGISTER</a>
+                    <a href="">FORGOT PASSWORD</a>
+                </div>
+            </div>
+            <div class="circle circle-two"></div>
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
+</div>

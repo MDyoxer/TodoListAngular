@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';  // Importar HttpClient
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import Swal from 'sweetalert2';  // Si estás usando Swal para notificaciones
+import Swal from 'sweetalert2';  
 
 @Component({
   selector: 'app-tareas',
